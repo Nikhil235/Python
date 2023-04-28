@@ -8,3 +8,15 @@ for i in range(2000, 3201):
 
 # Using list comprehension
 print(*(i for i in range(2000, 3201) if i % 7 == 0 and i % 5 != 0), end=',')
+
+
+# Question 2
+# Write a program which can compute the factorial of a given numbers.
+
+# Solution  - (Using for loop)
+n = int(input('Enter a number: '))
+
+fact = 1
+for i in range(1, n+1):
+    fact = fact * i
+print(fact)
